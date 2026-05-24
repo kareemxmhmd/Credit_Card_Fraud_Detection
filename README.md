@@ -42,7 +42,7 @@ This project covers the full pipeline: EDA, preprocessing, training 4 models, th
 | XGBoost | 0.93 | 0.79 | 0.85 | 0.97 | 0.85 |
 | Logistic Regression | 0.07 | 0.93 | 0.12 | 0.97 | 0.72 |
 
-> **Random Forest** was the best model and was saved as the final model.
+> **Best Model**: Random Forest (selected for final deployment)
 
 ### Threshold Tuning
 
@@ -51,15 +51,7 @@ This project covers the full pipeline: EDA, preprocessing, training 4 models, th
 | Default | 0.50 | 0.96 | 0.81 | 0.88 |
 | **Optimal** | **~0.35** | **~0.87** | **~0.88** | **~0.88** |
 
-### Top 5 Features (SHAP)
-
-| Feature | Direction |
-|---|---|
-| V14 | Lower values → higher fraud score |
-| V4 | Higher values → higher fraud score |
-| V11 | Lower values → higher fraud score |
-| V12 | Lower values → higher fraud score |
-| V10 | Lower values → higher fraud score |
+### Explainability
+SHAP analysis shows `V14` and `V17` as top fraud indicators.
 
 ---
-
